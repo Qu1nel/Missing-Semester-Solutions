@@ -2,7 +2,7 @@
 
 - [Lecture 1: Course overview + the shell](./Lecture_1)
 - [Lecture 2: Shell Tools and Scripting](./Lecture_2)
--
+- [Lecture 3: Editors (Vim)](./Lecture_3)
 -
 -
 -
