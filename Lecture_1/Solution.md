@@ -8,7 +8,7 @@
    mkdir -p /tmp/missing/
    ```
 
-3. Look up the `touch` program. The `man` program is your friend.
+2. Look up the `touch` program. The `man` program is your friend.
 
    **Solution:** we can use `tldr touch` or `man touch`
    ```
@@ -22,7 +22,7 @@
    file associated with standart output.
    ```
 
-4. Use `touch` to create a new file called `semester` in `missing`.
+3. Use `touch` to create a new file called `semester` in `missing`.
 
    **Solution:** run the following commands in your terminal.
    
@@ -30,7 +30,7 @@
    touch /tmp/missing/semester
    ```
 
-5. Write the following into that file, one line at a time:
+4. Write the following into that file, one line at a time:
 
    **Solution:** run the following commands in your terminal.
 
@@ -41,7 +41,7 @@
 
    The symbol ! is a "history extension" and is needed in the escaping to disable\* its effect.
 
-6. Try to execute the file, i.e. type the path to the script (`./semester`) into your shell and
+5. Try to execute the file, i.e. type the path to the script (`./semester`) into your shell and
    press enter. Understand why it doesn’t work by consulting the output of `ls` (hint: look at
    the permission bits of the file)
    
@@ -50,7 +50,7 @@
    Since the file is not executable (i.e., it does not have the run permission attribute), it
    cannot be run by specifying its name.
 
-7. Run the command by explicitly starting the `sh` interpreter, and giving it the file `semester`
+6. Run the command by explicitly starting the `sh` interpreter, and giving it the file `semester`
    as the first argument, i.e. `sh semester`. Why does this work, while `./semester` didn't?
 
    **Solution:**
@@ -58,7 +58,7 @@
    When you specify the sh interpreter and specify a file name as an argument, the entire contents
    of that file are interpreted as code for sh. Thus it is executed.
 
-8. Look up the `chmod` program (e.g. use `man chmod`).
+7. Look up the `chmod` program (e.g. use `man chmod`).
 
    **Solution:**
    
@@ -84,7 +84,7 @@
    
    rx - 0b101 - 0o5
 
-9. Use `chmod` to make it possible to run the command `./semester` rather than having to type `sh semester`.
+8. Use `chmod` to make it possible to run the command `./semester` rather than having to type `sh semester`.
    How does your shell know that the file is supposed to be interpreted using `sh`? See this page on the
    [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line for more information.
 
@@ -99,7 +99,7 @@
    program built into the shell) identifies the path specified in the shebang and passes the executable
    as an argument to that path. Only in UNIX.
 
-11. Use `|` and `>` to write the “last modified” date output by `semester` into a file called `last-modified.txt`
+9. Use `|` and `>` to write the “last modified” date output by `semester` into a file called `last-modified.txt`
     in your home directory.
 
     **Solution:**
@@ -108,7 +108,7 @@
     /tmp/missing/semester | grep -i last-mod > "last-modified.txt
     ```
 
-13. Write a command that reads out your laptop battery’s power level or your desktop machine’s CPU temperature from
+10. Write a command that reads out your laptop battery’s power level or your desktop machine’s CPU temperature from
     `/sys`. Note: if you’re a macOS user, your OS doesn’t have sysfs, so you can skip this exercise.
 
     **Solution:** (for Arch) run the following commands in your terminal.
