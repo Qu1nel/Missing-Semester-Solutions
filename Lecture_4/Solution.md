@@ -26,7 +26,7 @@
    **Solution:**
 
    -Replace all `apple` (basic regex) occurrences with `mango` (basic regex) in
-   specific fiel and overwrite the original file in place:
+   specific file and overwrite the original file in place:
 
    ```bash
    sed -i 's/apple/magno/g' path/to/file
