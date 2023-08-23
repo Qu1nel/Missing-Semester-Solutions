@@ -65,5 +65,5 @@
    ##### **Solution:** run the following command in your terminal
 
    ```bash
-   alias topcmd="history 1 | awk '{$1=\"\"; print substr($0,2)}' | sort | uniq -c | sort -nk1,1 | tail -10"
+   alias topcmd="history 1 | awk '{\$1=\$2=\$3=\"\";print \$0}' | sed 's/   //' | sort | uniq -c | sort -n | uniq | tail -20"
    ```
