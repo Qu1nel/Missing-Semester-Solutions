@@ -4,7 +4,7 @@
 - [Lecture 2: Shell Tools and Scripting](./Lecture_2)
 - [Lecture 3: Editors (Vim)](./Lecture_3)
 - [Lecture 4: Data Wrangling](./Lecture_4)
--
+- [Lecture 5: Command-line Enviroment](./Lecture_5)
 -
 -
 -
