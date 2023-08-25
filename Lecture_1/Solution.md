@@ -1,4 +1,4 @@
-# Solutions of Lectures 1
+# Solutions of Lecture 1
 
 1. Create a new directory called `missing` under `/tmp`.
 
@@ -11,6 +11,7 @@
 2. Look up the `touch` program. The `man` program is your friend.
 
    **Solution:** we can use `tldr touch` or `man touch`
+
    ```
    `touch` - change file timstamps.
 
@@ -25,7 +26,7 @@
 3. Use `touch` to create a new file called `semester` in `missing`.
 
    **Solution:** run the following commands in your terminal.
-   
+
    ```bash
    touch /tmp/missing/semester
    ```
@@ -44,9 +45,9 @@
 5. Try to execute the file, i.e. type the path to the script (`./semester`) into your shell and
    press enter. Understand why it doesn’t work by consulting the output of `ls` (hint: look at
    the permission bits of the file)
-   
+
    **Solution:**
-   
+
    Since the file is not executable (i.e., it does not have the run permission attribute), it
    cannot be run by specifying its name.
 
@@ -61,35 +62,35 @@
 7. Look up the `chmod` program (e.g. use `man chmod`).
 
    **Solution:**
-   
+
    `chmod` - change file mode bits
-   
+
    chmod \[OPTION]... MODE\[,MODE]... FILE...
-   
+
    A chmod command changes the file mode bits of each given file according to mode (permission), wich
    can be either a symbolic representation of changes to make, or an octal number representation the
    bit pattern for the new mode bits.
-   
+
    `-v, --verbose` - output diagnostic for every file processed
-   
+
    `-c, --changes` - like verbose but report only when a change is made
-   
+
    MODES:
-   
+
    - r - read permission (4) - 0b100 - 0o4
    - w - write permission (2) - 0b010 - 0o2
    - x - exectute permission (1) - 0b001 - 0o1
-     
+
    rw - 0b110 - 0o6
-   
+
    rx - 0b101 - 0o5
 
 8. Use `chmod` to make it possible to run the command `./semester` rather than having to type `sh semester`.
    How does your shell know that the file is supposed to be interpreted using `sh`? See this page on the
-   [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) line for more information.
+   [shebang](<https://en.wikipedia.org/wiki/Shebang_(Unix)>) line for more information.
 
    **Solution:** run the following commands in your terminal.
-   
+
    ```bash
    chmode +x /tmp/missing/semester
    ```
@@ -100,13 +101,13 @@
    as an argument to that path. Only in UNIX.
 
 9. Use `|` and `>` to write the “last modified” date output by `semester` into a file called `last-modified.txt`
-    in your home directory.
+   in your home directory.
 
-    **Solution:**
+   **Solution:**
 
-    ```bash
-    /tmp/missing/semester | grep -i last-mod > "last-modified.txt
-    ```
+   ```bash
+   /tmp/missing/semester | grep -i last-mod > "last-modified.txt
+   ```
 
 10. Write a command that reads out your laptop battery’s power level or your desktop machine’s CPU temperature from
     `/sys`. Note: if you’re a macOS user, your OS doesn’t have sysfs, so you can skip this exercise.
