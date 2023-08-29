@@ -8,4 +8,4 @@
 - [Lecture 6: Version Control (Git)](./Lecture_6)
 - [Lecture 7: Debugging and Profiling](./Lecture_7)
 - [Lecture 8: Metaprogramming](./Lecture_8)
-- [Lecture 9: Security and Cryptography](./Lecture_8)
+- [Lecture 9: Security and Cryptography](./Lecture_9)
