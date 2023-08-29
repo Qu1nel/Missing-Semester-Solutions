@@ -1,3 +1,5 @@
+# Solutions of Lecture 8
+
 1. Most makefiles provide a target called `clean`. This isn’t intended to produce
    a file called `clean`, but instead to `clean` up any files that can be re-built
    by make. Think of it as a way to “undo” all of the build steps. Implement a

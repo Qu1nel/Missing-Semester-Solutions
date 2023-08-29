@@ -1,3 +1,5 @@
+# Solutions of Lecture 9
+
 1. Entropy
 
    1. Suppose a password is chosen as a concatenation of four lower-case
